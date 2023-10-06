@@ -3,7 +3,7 @@ import NavigationDrawer from '../Components/NavigationDrawer'
 
 const UserTracker = () => {
   return (
-    <div>
+    <div className='flex flex-row'>
         <NavigationDrawer />
         UserTracker
         </div>

@@ -3,7 +3,7 @@ import NavigationDrawer from '../Components/NavigationDrawer'
 
 const VehicleWeighting = () => {
   return (
-    <div>
+    <div className='flex flex-row'> 
         <NavigationDrawer/>
         VehicleWeighting</div>
   )

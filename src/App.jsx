@@ -7,10 +7,16 @@ import Report from "./Pages/Report";
 
 function App() {
   const [selectedButton, setSelectedButton] = useState("ZoneTracker");
+  const handleButtonSelect = (buttonName) => {
+    setSelectedButton(buttonName);
+  };
 
   return (
     <div className="flex flex-row">
-      <NavigationDrawer selectedButton={selectedButton} />
+      <NavigationDrawer
+        onButtonSelect={handleButtonSelect}
+        selectedButton={selectedButton}
+      />
       <div className="flex-grow">
         {selectedButton === "ZoneTracker" && <ZoneTracker />}
         {selectedButton === "VehicleWeighting" && <VehicleWeighting />}

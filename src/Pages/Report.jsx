@@ -1,8 +1,11 @@
 import React from 'react'
+import NavigationDrawer from '../Components/NavigationDrawer'
 
 const Report = () => {
   return (
-    <div>Report</div>
+    <div className='flex flex-row'>
+      <NavigationDrawer />
+      Report</div>
   )
 }
 
